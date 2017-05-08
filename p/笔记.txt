@@ -1,0 +1,8 @@
+false 假
+true 真
+count(抗特)
+LIMIT(林美特)
+total（脱脱）
+temp（）
+function(方寻)
+return（瑞腾）

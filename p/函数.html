@@ -1,0 +1,46 @@
+<!--
+	函数
+1、函数就是一段代码，我们给它起名字，放起来以后可以用
+2、JS有很多内置函数，能帮组我们实现很多有用的功能
+	定义函数
+1、function fun_name(){}
+2、function fun_name(a,b){}
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			var u = 42;
+			var v = 22;
+			function print(s){
+				document.write(s);//打印出结果
+			}
+			
+			function max(a,b){
+				return a>b?a:b;
+			}
+			
+			function gcd(u,v){
+				var n = v;
+				var m = u;
+			
+				var temp = v;
+				while(v != 0){
+					temp = u % v;
+					u = v;
+					v = temp;
+				}
+//				alert(m+"和"+n+"的最大公约数是" + u);
+//				print(m+"和"+n+"的最大公约数是" +u+"<br/>")
+				return u;
+				}
+			
+			print(max(42,24)+"<br/>");
+			print(u+"和"+v+"的最大公约数是"+gcd(u,v)+"<br/>");
+		</script>
+	</body>
+</html>
